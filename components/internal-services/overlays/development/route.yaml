@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: internal-services
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: internal-services
+    app.kubernetes.io/part-of: internal-services
+  name: internal-servicesgitv
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: internal-services
+    weight: 100
+status: {}

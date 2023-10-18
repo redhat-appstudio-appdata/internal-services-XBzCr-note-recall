@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: internal-services
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-release-2-tenant/internal-services/internal-services@sha256:39c51a60aff588e19c2abe60bcf7f8be2ec06f17c3c918b96bb511ef3af07bbe
+        name: container-image
+        resources: {}
+status: {}
