@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/part-of: internal-services
   name: internal-services
 spec:
-  replicas: 1
   revisionHistoryLimit: 0
   selector:
     matchLabels:
