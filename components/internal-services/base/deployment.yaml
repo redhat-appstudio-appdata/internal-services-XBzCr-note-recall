@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/instance: internal-services
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-release-2-tenant/internal-services/internal-services@sha256:d23c608a5daac0c67135e2547b97d4f5fded78a5834669e29451e045e4b72eae
+      - image: quay.io/redhat-user-workloads/rhtap-release-2-tenant/internal-services/internal-services@sha256:373eda328f94636dfb9ec384ac3418a104505bc80b454657cf145aca97cbc3cf
         imagePullPolicy: Always
         name: container-image
         ports:
