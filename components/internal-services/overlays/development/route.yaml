@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: internal-services
     app.kubernetes.io/part-of: internal-services
-  name: internal-servicesgitv
+  name: internal-servicesuzq0
 spec:
   port:
     targetPort: 8080
